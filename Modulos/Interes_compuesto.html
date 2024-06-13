@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interes Compuesto</title>
+ <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+ <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+ 
+  <style>
+    body {
+      color: darkslategray;
+    }
+    header {
+      width: 100%;
+    }
+    .header-container {
+      max-width: 100%;
+    }
+    .featurette-divider {
+      margin: 2.5rem 0;
+    }
+  </style>
+<script type="text/javascript">
+function MM_callJS(jsStr) { //v2.0
+  return eval(jsStr)
+}
+  </script>
+</head>
+<body>
+  <header>
+	 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    
+      <a class="navbar-brand" href="#">UAE- ECONOMIA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="container col-md-2 align-baseline">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Interes Simple</a>
+            <ul class="dropdown-menu" data-bs-popper="static">
+              <li><a class="dropdown-item" href="Modulos/Interes_simple.html">Monto</a></li>
+              <li><a class="dropdown-item" href="Modulos/Interes_simple-capital.html">Capital</a></li>
+			  <li><a class="dropdown-item" href="Modulos/Interes_simple-tasa.html">Tasa de intereses</a></li>
+              <li><a class="dropdown-item" href="Modulos/Linea_de_tiempo.html">Diagrama de tiempo</a></li>
+				<li><a class="dropdown-item" href="Modulos/Descuento Simple.html">Descuento Simple</a></li>
+			  <li><a class="dropdown-item" href="Ejercicio Interes Simple.html">Ejemplos Excel</a></li>
+            </ul>
+          </li>
+			<li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Interes Compuesto</a>
+            <ul class="dropdown-menu" data-bs-popper="static">
+              <li><a class="dropdown-item" href="Modulos/Interes_compuesto.html">Monto</a></li>
+              <li><a class="dropdown-item" href="Modulos/Capital_InteresCompuesto.html">Capital</a></li>
+			  <li><a class="dropdown-item" href="Modulos/Tasa de interes_ Compuesto.html">Tasa de intereses</a></li>
+              
+			  <li><a class="dropdown-item" href="Ejercicio Interes Compuesto.html">Ejemplos Excel</a></li>
+            </ul>
+          </li>
+			<a class="nav-link" aria-current="page" aria-disabled="true" href="TASAS.html" >Tasas</a>
+			
+			<li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Anualidades</a>
+            <ul class="dropdown-menu" data-bs-popper="static">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              
+            </ul>
+          </li>
+			<li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="" aria-disabled="true" >Next class</a>
+            <ul class="dropdown-menu" data-bs-popper="static">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              
+            </ul>
+          </li>
+			
+        </ul>
+		  
+		  <div class="col-md-3 text-end">
+                <button type="button" class="btn btn-outline-primary me-2">PLAY</button>
+		  </div>
+      
+      </div>
+    
+  </nav>
+	</header>
+
+  <hr class="featurette-divider">
+<div class="container">
+  <div class="row featurette">
+    <div class="col-md-12 d-flex align-items-center justify-content-between">
+      <div>
+        <h2 class="featurette-heading fw-normal lh-1" style="color:blue">Interés Compuesto<span class="text-body-secondary"></span></h2>
+        <p class="lead">El interés compuesto es una forma de calcular los intereses de una inversión, que utiliza los intereses acumulados en el pasado además del capital principal invertido.</p>
+        <h2 class="featurette-heading fw-normal lh-1" style="color:blue">Características: <span class="text-body-secondary"></span></h2>
+        <p class="lead">Las principales características del interés compuesto son las siguientes:</p>
+        <ul>
+          <li>El capital de inicio cambia en cada uno de los períodos porque los intereses se capitalizan, lo que quiere decir que se convierten en capital.</li>
+          <li>La tasa de interés se aplicará siempre sobre un capital diferente.</li>
+          <li>Los intereses periódicos son mayores.</li>
+          <li>Pueden ser aplicados en cualquier tipo de operación ya sea a corto o largo plazo.</li>
+        </ul>
+      </div>
+      <img src="../img/interes-compuesto.png" width="370" height="320" alt="Small Image" class="ms-3">
+    </div>
+  </div>
+
+
+    <div class="row mt-4">
+      <div class="col-12 text-center header-container" align="center">
+        <h2 style="color: red">Formula Interés Compuesto - Monto</h2>
+        <img src="../img/InteresCompuesto.png" width="320" height="250" alt="Small Image">
+      </div>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="container">
+    <div class="header text-center">
+      <h1 style="color:darkorange">Calculadora de Monto</h1>
+      <p>Ingresa los valores para calcular el interés compuesto usando la fórmula <b>( M = C(1 + i/p)^np )</b></p>
+    </div>
+    
+    <div class="form-container mt-4">
+      <h2 style="color: aqua">Escenario:</h2>
+      <p>Imagina que has invertido en un depósito a plazo fijo. Introduce el capital inicial, la tasa de interés anual, el número de períodos de capitalización por año y el tiempo en años para calcular el monto total y el interés generado.</p>
+		<h2 style="color: blue">Tus Datos: </h2>
+      
+      <form id="compound-interest-form">
+        <div class="mb-3">
+          <label for="capital" class="form-label">Capital (C) en $</label>
+          <input type="number" class="form-control" id="capital" placeholder="Ingrese el capital inicial" required>
+        </div>
+        <div class="mb-3">
+          <label for="rate" class="form-label">Tasa de Interés Anual (i) en %</label>
+          <input type="number" step="0.01" class="form-control" id="rate" placeholder="Ingrese la tasa de interés (por ejemplo, 5 para 5%)" required>
+        </div>
+        <div class="mb-3">
+          <label for="periods" class="form-label">Períodos de Capitalización por Año (p)</label>
+          <input type="number" class="form-control" id="periods" placeholder="Ingrese el número de períodos de capitalización por año" required>
+        </div>
+        <div class="mb-3">
+          <label for="time" class="form-label">Tiempo (n) en años</label>
+          <input type="number" class="form-control" id="time" placeholder="Ingrese el tiempo en años" required>
+        </div>
+        <button type="button" class="btn btn-primary" onclick="calculateCompoundInterest()" id="calculate-button">Calcular</button>
+      </form>
+    </div>
+
+    <div class="result-container text-center mt-4">
+      <h2 style="color: red">Resultados:</h2>
+      <div class="mb-3">
+        <label for="amount" class="form-label">Monto Total (M) en $</label>
+        <input type="text" class="form-control text-center" id="amount" readonly>
+      </div>
+      <div class="mb-3">
+        <label for="interest" class="form-label">Interés Generado (I) en $</label>
+        <input type="text" class="form-control text-center" id="interest" readonly>
+      </div>
+    </div>
+  </div>
+	<script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	
+  <script src="../js/compound-interest.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+</body>
+</html>

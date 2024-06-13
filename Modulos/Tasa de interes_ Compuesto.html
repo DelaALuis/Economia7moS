@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interés Compuesto - Tasa de Interes</title>
+ <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+ <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+ 
+  <style>
+    body {
+      color: darkslategray;
+    }
+    header {
+      width: 100%;
+    }
+    .header-container {
+      max-width: 100%;
+    }
+    .featurette-divider {
+      margin: 2.5rem 0;
+    }
+	  .form-container, .result-container, .scenario-container {
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+	 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    
+      <a class="navbar-brand" href="#">UAE- ECONOMIA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="container col-md-2 align-baseline">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Interes Simple</a>
+            <ul class="dropdown-menu" data-bs-popper="static">
+              <li><a class="dropdown-item" href="Modulos/Interes_simple.html">Monto</a></li>
+              <li><a class="dropdown-item" href="Modulos/Interes_simple-capital.html">Capital</a></li>
+			  <li><a class="dropdown-item" href="Modulos/Interes_simple-tasa.html">Tasa de intereses</a></li>
+              <li><a class="dropdown-item" href="Modulos/Linea_de_tiempo.html">Diagrama de tiempo</a></li>
+				<li><a class="dropdown-item" href="Modulos/Descuento Simple.html">Descuento Simple</a></li>
+			  <li><a class="dropdown-item" href="Ejercicio Interes Simple.html">Ejemplos Excel</a></li>
+            </ul>
+          </li>
+			<li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Interes Compuesto</a>
+            <ul class="dropdown-menu" data-bs-popper="static">
+              <li><a class="dropdown-item" href="Modulos/Interes_compuesto.html">Monto</a></li>
+              <li><a class="dropdown-item" href="Modulos/Capital_InteresCompuesto.html">Capital</a></li>
+			  <li><a class="dropdown-item" href="Modulos/Tasa de interes_ Compuesto.html">Tasa de intereses</a></li>
+              
+			  <li><a class="dropdown-item" href="Ejercicio Interes Compuesto.html">Ejemplos Excel</a></li>
+            </ul>
+          </li>
+			<a class="nav-link" aria-current="page" aria-disabled="true" href="TASAS.html" >Tasas</a>
+			<li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Anualidades</a>
+            <ul class="dropdown-menu" data-bs-popper="static">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              
+            </ul>
+          </li>
+			<li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="" aria-disabled="true" >Next class</a>
+            <ul class="dropdown-menu" data-bs-popper="static">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              
+            </ul>
+          </li>
+			
+        </ul>
+		  
+		  <div class="col-md-3 text-end">
+                <button type="button" class="btn btn-outline-primary me-2">PLAY</button>
+		  </div>
+      
+      </div>
+    
+  </nav>
+	</header>
+
+  <hr class="featurette-divider">
+  <div class="container">
+    <div class="row featurette">
+      <div class="col-md-12 d-flex align-items-center justify-content-between">
+		  <div>
+        <h2 class="featurette-heading fw-normal lh-1" style="color:blue">Tasa de interes<span class="text-body-secondary"></span></h2>
+        <p class="lead">La tasa de interés compuesto es el porcentaje que se aplica al capital inicial y a los intereses acumulados durante cada período de inversión. Este tipo de interés permite que los intereses generen a su vez nuevos intereses, lo que produce un crecimiento exponencial del monto invertido a lo largo del tiempo. La fórmula para calcular la tasa de interés compuesto a partir del monto final.</p> 
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-12 text-center header-container" align="center">
+        <h2 style="color: red">Formula Interés Compuesto - Tasa de interes</h2>
+        <img src="../img/InteresCompuesto-INTERES.png" width="430" height="280" alt="Small Image">
+      </div>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+  <div class="container">
+    <div class="text-center">
+      <h1 class="mb-4" style="color: darkorange">Calculadora de Tasa de Interés Compuesto</h1>
+      <p>Ingresa los valores para calcular la tasa de interés compuesto usando la fórmula <strong>i = \(\sqrt[n]{\frac{M}{C}} - 1\)</strong></p>
+    </div>
+
+    <div class="scenario-container">
+      <h2 style="color: aqua">Escenario:</h2>
+      <p>Imagina que conoces el monto final de una inversión, el capital inicial y el tiempo en meses. Introduce estos valores para calcular la tasa de interés compuesto.</p>
+      <h3>Tus datos:</h3>
+    </div>
+
+    <div class="form-container" align="center">
+      <form id="interest-rate-form">
+        <div class="mb-3">
+          <label for="amount" class="form-label">Monto Final (M) en $</label>
+          <input type="number" class="form-control" id="amount" placeholder="Ingrese el monto final" required>
+        </div>
+        <div class="mb-3">
+          <label for="initial-capital" class="form-label">Capital Inicial (C) en $</label>
+          <input type="number" class="form-control" id="initial-capital" placeholder="Ingrese el capital inicial" required>
+        </div>
+        <div class="mb-3">
+          <label for="time" class="form-label">Tiempo (n) en meses</label>
+          <input type="number" class="form-control" id="time" placeholder="Ingrese el tiempo en meses" required>
+        </div>
+        <button type="button" class="btn btn-primary" id="calculate-interest-rate">Calcular</button>
+      </form>
+    </div>
+
+    <div class="result-container" id="result-container" style="display: none;">
+      <h2>Resultados:</h2>
+      <div class="mb-3">
+        <label for="interest-rate" class="form-label">Tasa de Interés Compuesto (i) en %</label>
+        <input type="text" class="form-control text-center" id="interest-rate" readonly>
+      </div>
+    </div>
+  </div>
+	</div>
+	<script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	
+	
+	
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../js/interest-rate_C.js"></script>
+</body>
+</html>

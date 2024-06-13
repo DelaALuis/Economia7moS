@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diagrama de Tiempo Interactivo</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      color: darkslategray;
+    }
+    .timeline {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      position: relative;
+      padding: 20px 0;
+    }
+    .timeline .event {
+      text-align: center;
+      flex: 1;
+      position: relative;
+    }
+    .timeline .event:not(:last-child)::after {
+      content: '';
+      width: 100%;
+      height: 2px;
+      background: #000;
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      z-index: -1;
+    }
+    .event h5 {
+      margin-bottom: 0.5rem;
+    }
+    .conclusion {
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #e9ecef;
+      border: 1px solid #dee2e6;
+      border-radius: 5px;
+    }
+    .form-container {
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .result-container {
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+	<header>
+	 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    
+      <a class="navbar-brand" href="#">UAE- ECONOMIA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="container col-md-2 align-baseline">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Interes Simple</a>
+            <ul class="dropdown-menu" data-bs-popper="static">
+              <li><a class="dropdown-item" href="Modulos/Interes_simple.html">Monto</a></li>
+              <li><a class="dropdown-item" href="Modulos/Interes_simple-capital.html">Capital</a></li>
+			  <li><a class="dropdown-item" href="Modulos/Interes_simple-tasa.html">Tasa de intereses</a></li>
+              <li><a class="dropdown-item" href="Modulos/Linea_de_tiempo.html">Diagrama de tiempo</a></li>
+				<li><a class="dropdown-item" href="Modulos/Descuento Simple.html">Descuento Simple</a></li>
+			  <li><a class="dropdown-item" href="Ejercicio Interes Simple.html">Ejemplos Excel</a></li>
+            </ul>
+          </li>
+			<li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Interes Compuesto</a>
+            <ul class="dropdown-menu" data-bs-popper="static">
+              <li><a class="dropdown-item" href="Modulos/Interes_compuesto.html">Monto</a></li>
+              <li><a class="dropdown-item" href="Modulos/Capital_InteresCompuesto.html">Capital</a></li>
+			  <li><a class="dropdown-item" href="Modulos/Tasa de interes_ Compuesto.html">Tasa de intereses</a></li>
+              
+			  <li><a class="dropdown-item" href="Ejercicio Interes Compuesto.html">Ejemplos Excel</a></li>
+            </ul>
+          </li>
+			<a class="nav-link" aria-current="page" aria-disabled="true" href="TASAS.html" >Tasas</a>
+			<li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Anualidades</a>
+            <ul class="dropdown-menu" data-bs-popper="static">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              
+            </ul>
+          </li>
+			<li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="" aria-disabled="true" >Next class</a>
+            <ul class="dropdown-menu" data-bs-popper="static">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              
+            </ul>
+          </li>
+			
+        </ul>
+		  
+		  <div class="col-md-3 text-end">
+                <button type="button" class="btn btn-outline-primary me-2">PLAY</button>
+		  </div>
+      
+      </div>
+    
+  </nav>
+	</header>
+
+  <hr class="featurette-divider">
+  <div class="container">
+    <div class="row featurette">
+      <div class="col-md-12 d-flex align-items-center justify-content-between">
+		  <div>
+        <h2 class="featurette-heading fw-normal lh-1" style="color:blue">Tiempo<span class="text-body-secondary"></span></h2>
+        <p class="lead">Calcular el Tiempo, consiste determinar el plazo o duración que tiene una operación financiera. El plazo o duración es expresado en número de períodos; y a su vez los períodos pueden ser expresados en días, semanas, meses, trimestres, semestres, años, etc.
+		El resultado que se obtiene cuando se calcula el tiempo, es el número de períodos; es decir, número de días, número de meses, numero de semestres, etc.
+		</p>
+
+        <h2 class="featurette-heading fw-normal lh-1" style="color:blue">tener en cuenta que: <span class="text-body-secondary"></span></h2>
+        <p class="lead">La tasa de interés también incide directamente en el cálculo del tiempo, ya que la periodicidad de la tasa de interés, definirá la periodicidad que tendrá el resultado del tiempo</p>
+        
+        </div>
+		<div class="ms-3 text-end" ><h4 style="color: red">formula Tiempo en Interes Simple</h4><img src="../img/Tiempo_IS.png" width="400" height="300" alt="Small Image" class="ms-3">
+		   </div>
+		  
+      </div>
+    </div>
+	  <hr class="featurette-divider">
+
+	 <header class="header text-center">
+    <h1 style="color: orange">Calculadora de Tiempo en Interés Simple</h1>
+		 <p>Calcula el tiempo usando las fórmulas <b>n = (M/C - 1)/i </b>   y  <b> n = I/(C * i)</b></p>
+  </header>
+
+  <div class="container">
+    <div class="form-container">
+      <h2 style="color: aqua">Escenario:</h2>
+      <p>Imagina que has invertido en un depósito bancario. Introduce el monto final, el capital inicial y la tasa de interés anual para calcular el tiempo necesario para alcanzar ese monto.</p>
+      
+      <form id="time-simple-interest-form">
+		  <h3>Tus datos:</h3>
+        <div class="mb-3">
+          <label for="finalAmount" class="form-label">Monto Final (M) en $</label>
+          <input type="number" class="form-control" id="finalAmount" placeholder="Ingrese el monto final" required>
+        </div>
+        <div class="mb-3">
+          <label for="capital" class="form-label">Capital (C) en $</label>
+          <input type="number" class="form-control" id="capital" placeholder="Ingrese el capital inicial" required>
+        </div>
+        <div class="mb-3">
+          <label for="interestRate" class="form-label">Tasa de Interés Anual (i) en %</label>
+          <input type="number" step="0.01" class="form-control" id="interestRate" placeholder="Ingrese la tasa de interés (por ejemplo, 5 para 5%)" required>
+        </div>
+        <div class="mb-3">
+          <label for="interestGenerated" class="form-label">Interés Generado (I) en $</label>
+          <input type="number" class="form-control" id="interestGenerated" placeholder="Ingrese el interés generado" required>
+        </div>
+      </form>
+      <div class="text-center">
+        <button type="button" class="btn btn-primary mx-auto" id="calculate-time">Calcular</button>
+      </div>
+    </div>
+
+    <div class="result-container text-center mt-4">
+      <h2 style="color: red">Resultados:</h2>
+      <div class="mb-3">
+        <label for="time1" class="form-label">Tiempo (n) usando la fórmula n = (M/C - 1)/i en años</label>
+        <input type="text" class="form-control text-center" id="time1" readonly>
+      </div>
+      <div class="mb-3">
+        <label for="time2" class="form-label">Tiempo (n) usando la fórmula n = I/(C * i) en años</label>
+        <input type="text" class="form-control text-center" id="time2" readonly>
+      </div>
+    </div>
+  </div>
+	</div>	
+	<hr class="featurette-divider">
+	
+	
+	
+	
+  <div class="container mt-5">
+    <h1 class="text-center mb-4" style="color: red">Diagrama de Tiempo Interactivo</h1>
+    <div class="form-container">
+      <form id="timeline-form">
+        <div class="mb-3">
+          <label for="capital" class="form-label">Capital Inicial ($)</label>
+          <input type="number" class="form-control" id="capital1" placeholder="Ingrese el capital inicial" required>
+        </div>
+        <div class="mb-3">
+          <label for="cashflow1" class="form-label">Flujo de Efectivo Año 1 ($)</label>
+          <input type="number" class="form-control" id="cashflow1" placeholder="Ingrese el flujo de efectivo para el año 1" required>
+        </div>
+        <div class="mb-3">
+          <label for="cashflow2" class="form-label">Flujo de Efectivo Año 2 ($)</label>
+          <input type="number" class="form-control" id="cashflow2" placeholder="Ingrese el flujo de efectivo para el año 2" required>
+        </div>
+        <div class="mb-3">
+          <label for="cashflow3" class="form-label">Flujo de Efectivo Año 3 ($)</label>
+          <input type="number" class="form-control" id="cashflow3" placeholder="Ingrese el flujo de efectivo para el año 3" required>
+        </div>
+        <button type="button" class="btn btn-primary" id="generate-timeline" >Generar Diagrama</button>
+      </form>
+    </div>
+
+    <div class="timeline" id="timeline">
+      <!-- Diagrama de tiempo se generará aquí -->
+    </div>
+
+    <div class="conclusion" id="conclusion">
+      <!-- Conclusión se mostrará aquí -->
+    </div>
+  </div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<script src="../js/time-simple-interest.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    document.getElementById('generate-timeline').addEventListener('click', function() {
+      const capital = parseFloat(document.getElementById('capital1').value);
+      const cashflow1 = parseFloat(document.getElementById('cashflow1').value);
+      const cashflow2 = parseFloat(document.getElementById('cashflow2').value);
+      const cashflow3 = parseFloat(document.getElementById('cashflow3').value);
+
+      const timeline = document.getElementById('timeline');
+      timeline.innerHTML = '';
+
+      const events = [
+        { year: 'Año 0', cashflow: -capital },
+        { year: 'Año 1', cashflow: cashflow1 },
+        { year: 'Año 2', cashflow: cashflow2 },
+        { year: 'Año 3', cashflow: cashflow3 }
+      ];
+
+      let totalCashflow = -capital + cashflow1 + cashflow2 + cashflow3;
+
+      events.forEach(event => {
+        const div = document.createElement('div');
+        div.className = 'event';
+        div.innerHTML = `<h5>${event.year}</h5><p>${event.cashflow < 0 ? '-' : '+'} $${Math.abs(event.cashflow)}</p>`;
+        timeline.appendChild(div);
+      });
+
+      const conclusion = document.getElementById('conclusion');
+      if (totalCashflow > 0) {
+        conclusion.innerHTML = `<h5>Conclusión:</h5><p>El flujo de efectivo total es positivo: $${totalCashflow.toFixed(2)}. La inversión es rentable.</p>`;
+      } else if (totalCashflow < 0) {
+        conclusion.innerHTML = `<h5>Conclusión:</h5><p>El flujo de efectivo total es negativo: $${totalCashflow.toFixed(2)}. La inversión no es rentable.</p>`;
+      } else {
+        conclusion.innerHTML = `<h5>Conclusión:</h5><p>El flujo de efectivo total es neutral: $${totalCashflow.toFixed(2)}. No hay ganancia ni pérdida.</p>`;
+      }
+    });
+  </script>
+	  
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interés Simple</title>
+ <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+ <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+ 
+  <style>
+    body {
+      color: darkslategray;
+    }
+    header {
+      width: 100%;
+    }
+    .header-container {
+      max-width: 100%;
+    }
+    .featurette-divider {
+      margin: 2.5rem 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+	 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    
+      <a class="navbar-brand" href="#">UAE- ECONOMIA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="container col-md-2 align-baseline">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Interes Simple</a>
+            <ul class="dropdown-menu" data-bs-popper="static">
+              <li><a class="dropdown-item" href="Modulos/Interes_simple.html">Monto</a></li>
+              <li><a class="dropdown-item" href="Modulos/Interes_simple-capital.html">Capital</a></li>
+			  <li><a class="dropdown-item" href="Modulos/Interes_simple-tasa.html">Tasa de intereses</a></li>
+              <li><a class="dropdown-item" href="Modulos/Linea_de_tiempo.html">Diagrama de tiempo</a></li>
+				<li><a class="dropdown-item" href="Modulos/Descuento Simple.html">Descuento Simple</a></li>
+			  <li><a class="dropdown-item" href="Ejercicio Interes Simple.html">Ejemplos Excel</a></li>
+            </ul>
+          </li>
+			<li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Interes Compuesto</a>
+            <ul class="dropdown-menu" data-bs-popper="static">
+              <li><a class="dropdown-item" href="Modulos/Interes_compuesto.html">Monto</a></li>
+              <li><a class="dropdown-item" href="Modulos/Capital_InteresCompuesto.html">Capital</a></li>
+			  <li><a class="dropdown-item" href="Modulos/Tasa de interes_ Compuesto.html">Tasa de intereses</a></li>
+              
+			  <li><a class="dropdown-item" href="Ejercicio Interes Compuesto.html">Ejemplos Excel</a></li>
+            </ul>
+          </li>
+			<a class="nav-link" aria-current="page" aria-disabled="true" href="TASAS.html" >Tasas</a>
+			<li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Anualidades</a>
+            <ul class="dropdown-menu" data-bs-popper="static">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              
+            </ul>
+          </li>
+			<li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="" aria-disabled="true" >Next class</a>
+            <ul class="dropdown-menu" data-bs-popper="static">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              
+            </ul>
+          </li>
+			
+        </ul>
+		  
+		  <div class="col-md-3 text-end">
+                <button type="button" class="btn btn-outline-primary me-2">PLAY</button>
+		  </div>
+      
+      </div>
+    
+  </nav>
+	</header>
+
+  <hr class="featurette-divider">
+  <div class="container">
+    <div class="row featurette">
+      <div class="col-md-12 d-flex align-items-center justify-content-between">
+		  <div>
+        <h2 class="featurette-heading fw-normal lh-1" style="color:blue">Interés Simple<span class="text-body-secondary"></span></h2>
+        <p class="lead">El interés simple es el valor que se genera sobre el monto de un capital invariable y que se aplica sobre una inversión o un crédito. Se denomina simple porque se calcula solamente sobre el valor del capital inicial.</p>
+
+        <h2 class="featurette-heading fw-normal lh-1" style="color:blue">Características: <span class="text-body-secondary"></span></h2>
+        <p class="lead">Las principales características que podemos observar en el interés simple son las siguientes:</p>
+        <div>
+          <ul>
+            <li>En el interés simple el capital inicial se mantiene igual durante toda la operación.</li>
+            <li>El interés siempre será el mismo para cada uno de los períodos de la operación.</li>
+            <li>La tasa de interés se aplica sobre el capital invertido o capital inicial.</li>
+            <li>Incluye los diferentes intereses que produce una inversión durante cierto periodo de tiempo gracias al capital inicial.</li>
+            <li>Sus intereses no son acumulativos.</li>
+          </ul>
+		</div>
+        </div>
+		  <img src="../img/IS.png" width="370" height="300" alt="Small Image" class="ms-3">
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-12 text-center header-container" align="center">
+        <h2 style="color: red">Formula Interés Simple - Monto</h2>
+        <img src="../img/Monto_IS.png" width="430" height="250" alt="Small Image">
+      </div>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="container">
+    <div class="header text-center">
+      <h1 style="color: darkorange">Calculadora Monto</h1>
+      <p>Ingresa los valores para calcular el interés simple usando la fórmula <b>M = C(1 + i * n)</b></p>
+    </div>
+    
+    <div class="form-container mt-4">
+      <h2 style="color: aquamarine">Escenario:</h2>
+      <p >Imagina que has invertido en un depósito bancario. Introduce el capital inicial, la tasa de interés anual y el tiempo en meses para calcular el monto total y el interés generado.</p>
+	<h3 style="color: blue">  Tus Datos: </h3>	
+      
+      <form id="simple-interest-form">
+        <div class="mb-3">
+          <label for="capital" class="form-label">Capital (C) en $</label>
+          <input type="number" class="form-control" id="capital" placeholder="Ingrese el capital inicial" required>
+        </div>
+        <div class="mb-3">
+          <label for="rate" class="form-label">Tasa de Interés Anual (i) en %</label>
+          <input type="number" step="0.01" class="form-control" id="rate" placeholder="Ingrese la tasa de interés (por ejemplo, 5 para 5%)" required>
+        </div>
+        <div class="mb-3">
+          <label for="time" class="form-label">Tiempo (n) en meses</label>
+          <input type="number" class="form-control" id="time" placeholder="Ingrese el tiempo en meses" required>
+        </div>
+        <div class="mb-3 text-center">
+          <button type="button" class="btn btn-primary" id="calculate-btn">Calcular</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="result-container text-center mt-4">
+      <h2>Resultados:</h2>
+      <div class="mb-3">
+        <label for="amount" class="form-label">Monto Total (M) en $</label>
+        <input type="text" class="form-control text-center" id="amount" readonly>
+      </div>
+      <div class="mb-3">
+        <label for="interest" class="form-label">Interés Generado (I) en $</label>
+        <input type="text" class="form-control text-center" id="interest" readonly>
+      </div>
+    </div>
+  </div>
+	<script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	
+	
+	
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../js/simple-interest.js"></script>
+</body>
+</html>
