@@ -1,14 +1,79 @@
-<div class="bgoverlay">
-  <div class="container">
-    <span class="ico">
-      <span class="ico2"></span>
-      <span class="title">Click Me</span>
-    </span>
-    <div class="endtext">
-      <span class="close" title="Close"><i class="fa fa-times"></i></span>
-      <h1>Perder no es tan malo</h1>
-      <h2>~</h2>
-      <h3>Cuando te diviertes, 0- 4 ♥️♥️♥️</h3>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declaración de Amor</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f9f1f1;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #ff1493;
+            font-size: 3.5em;
+            animation: slideIn 2s ease-out;
+        }
+
+        .corazon {
+            font-size: 6em;
+            color: #ff6347;
+            animation: bounce 1.5s infinite;
+        }
+
+        .contenido {
+            font-size: 1.6em;
+            color: #333;
+            margin-top: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateY(-100%); }
+            100% { transform: translateY(0); }
+        }
+
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .firma {
+            font-size: 1.4em;
+            margin-top: 30px;
+            font-weight: bold;
+            color: #ff1493;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Desde que te vi...</h1>
+    <div class="corazon">❤️</div>
+
+    <div class="contenido">
+        No puedo dejar de pensar en ti. Desde el primer momento en que te vi, algo dentro de mí cambió por completo. 
+        <br><br>
+        Me fascinas, me atraes de una forma que no puedo explicar. Tu sonrisa, tu mirada, todo en ti es increíble. 
+        <br><br>
+        No sé cómo sucedió, pero desde ese instante, mi corazón late por ti y no puedo imaginar mi vida sin ti a mi lado.
+        <br><br>
+        Eres la persona que siempre soñé encontrar y, ahora que te he visto, no puedo dejar de pensar en ti. 
+        <br><br>
+        Me encantaría tener la oportunidad de conocerte más, de saber lo que piensas, lo que sientes. Quiero ser parte de tu vida, porque lo que siento por ti es más que un simple gusto, es algo profundo.
     </div>
-  </div>
-</div>
+
+    <div class="firma">Con todo mi cariño, <br> [Tu Nombre]</div>
+
+</body>
+</html>
