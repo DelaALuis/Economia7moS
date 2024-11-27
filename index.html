@@ -21,6 +21,7 @@
         .corazon {
             font-size: 6em;
             color: #ff6347;
+            cursor: pointer;
             animation: bounce 1.5s infinite;
         }
 
@@ -28,7 +29,21 @@
             font-size: 1.6em;
             color: #333;
             margin-top: 20px;
+            display: none; /* Ocultar mensaje inicialmente */
             animation: fadeIn 2s ease-in-out;
+        }
+
+        .mensaje {
+            font-size: 1.2em;
+            color: #ff6347;
+            margin-top: 20px;
+        }
+
+        .foto {
+            margin-top: 30px;
+            max-width: 100%;
+            height: auto;
+            display: none; /* Ocultar foto inicialmente */
         }
 
         @keyframes slideIn {
@@ -59,8 +74,15 @@
 <body>
 
     <h1>Desde que te vi...</h1>
-    <div class="corazon">❤️</div>
 
+    <!-- Corazón interactivo -->
+    <div class="corazon" onclick="mostrarMensaje()">❤️</div>
+
+    <div class="mensaje">
+        ¡Clickea el corazón para saber más!
+    </div>
+
+    <!-- Contenido oculto que aparece al hacer clic en el corazón -->
     <div class="contenido">
         No puedo dejar de pensar en ti. Desde el primer momento en que te vi, algo dentro de mí cambió por completo. 
         <br><br>
@@ -73,7 +95,19 @@
         Me encantaría tener la oportunidad de conocerte más, de saber lo que piensas, lo que sientes. Quiero ser parte de tu vida, porque lo que siento por ti es más que un simple gusto, es algo profundo.
     </div>
 
+    <!-- Imagen oculta inicialmente -->
+    <img src="https://www.example.com/tu-imagen.jpg" alt="Imagen romántica" class="foto">
+
     <div class="firma">Con todo mi cariño, <br> [Tu Nombre]</div>
+
+    <script>
+        function mostrarMensaje() {
+            // Mostrar mensaje y foto al hacer clic en el corazón
+            document.querySelector('.contenido').style.display = 'block';
+            document.querySelector('.foto').style.display = 'block';
+            document.querySelector('.mensaje').style.display = 'none'; // Ocultar el mensaje inicial
+        }
+    </script>
 
 </body>
 </html>
